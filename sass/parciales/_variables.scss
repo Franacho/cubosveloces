@@ -1,0 +1,22 @@
+//Colores a elegir (se puede elegir el que quieras, aunque no esté en la lista)
+$colores: (
+    predeterminadoAzul: #4580ff,
+    naranja: #f35f1a,
+    verde: #6dcf5a,
+    rosa: #ff66ff,
+    gris: #666
+);
+$azul: map-get($colores, predeterminadoAzul);
+$naranja: map-get($colores, naranja);
+$verde: map-get($colores, verde);
+$rosa: map-get($colores, rosa);
+$gris: map-get($colores, gris);
+
+//Colores
+$colorPrincipal: $azul; // #4580ff || #f35f1a || #6dcf5a || #ff66ff || #666 *MODIFICAR SÓLO EL colorPrincipal*
+$colorSecundario: #26f; // #26f
+$colorTerciario: #89caff; // #89caff
+$colorForm: #abdeff; // #abdeff
+
+// Mayusculas
+$mayuscula: uppercase;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700;800&family=Raleway&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="preload" href="../estilos/estilo-sass.css" as="style">
+    <link rel="stylesheet" href="../estilos/estilo-sass.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <!-- Barra de navegación -->
+            <a href="../index.html" class="header__nav--icon">
+                <!--Icono Navegacion-->
+                <img src="../img/rubikicon.webp" alt="Icono Cubo">
+            </a>
+            <img src="../img/rubik.webp" alt="NavBar" class="navBarIcono"> <!-- Icono barra desplegable -->
+            <ul class="listaNav ocultarNav">
+                <!-- Navegación principal -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cubos.html">Cubos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+            <ul class="listaNav navBar">
+                <!-- Navegación responsive -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cubos.html">Cubos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav> <!-- Fin barra de navegación -->
+    </header>
+    <main class="main">
+        <section class="main__notFound">
+            <div class="main__notFound--titulo">
+                <h1 class="titulo">404 Page Not Found</h1>
+                <a href="../index.html"><button class="boton boton--notFound">Volver al inicio</button></a>
+            </div>
+            <img src="../img/sadCube.webp" alt="Cubo Triste" class="main__notFound--imagen">
+        </section>
+    </main>
+    <script src="../js/js.js"></script>
+    <!--Javascript para la barra de navegación-->
+</body>
+
+</html>

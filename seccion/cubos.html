@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700;800&family=Raleway&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Cubos</title>
+    <link rel="preload" href="../estilos/estilo-sass.css" as="style">
+    <link rel="stylesheet" href="../estilos/estilo-sass.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <!-- Barra de navegación -->
+            <a href="../index.html" class="header__nav--icon">
+                <!--Icono Navegacion-->
+                <img src="../img/rubikicon.webp" alt="Icono Cubo">
+            </a>
+            <img src="../img/rubik.webp" alt="NavBar" class="navBarIcono"> <!-- Icono barra desplegable -->
+            <ul class="listaNav ocultarNav">
+                <!-- Navegación principal -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cubos.html">Cubos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+            <ul class="listaNav navBar">
+                <!-- Navegación responsive -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cubos.html">Cubos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav> <!-- Fin barra de navegación -->
+    </header>
+    <main class="mainResponsive">
+        <h1 class="titulo">Nuestros mejores cubos</h1>
+        <section>
+            <table class="tabla" cellspacing="0px">
+                <!--Tabla de cubos-->
+                <tr class="tableTitle">
+                    <!--Titulos de la tabla-->
+                    <th>Nombre</th>
+                    <th>Información técnica</th>
+                    <th>Características</th>
+                </tr>
+                <tr>
+                    <!--Características del primer cubo-->
+                    <td>Gan 11 M Pro</td>
+                    <td>
+                        <ul>
+                            <li>Es magnético</li>
+                            <li>Contiene imanes en los ejes</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Un corte de esquinas de 45°</li>
+                            <li>El diseño de las piezas aumenta la eficiencia del lubricante</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <!--Características del segundo cubo-->
+                    <td>Moyu RS3M 2021</td>
+                    <td>
+                        <ul>
+                            <li>Es magnético</li>
+                            <li>Contiene 9 niveles de ajustes</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Un corte de esquinas de 45°</li>
+                            <li>Es un cubo estable, lo que te puede dar control a la hora de armarlo</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+            <!--Fin de la tabla-->
+        </section>
+        <section>
+            <div class="masCubos">
+                <h3>Querés conocer mayor variedad de cubos?</h3>
+                <a href="tipoDeCubos.html" class="boton">Click aquí</a>
+            </div>
+        </section>
+        <section class="videoCubo">
+            <!--Video de Youtube sobre un cubo-->
+            <h2>Te dejamos una reseña sobre el Gan 11 M Pro hecha por un youtuber reconocido.</h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1VEjfRb7DqQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__enlaces"> <!--Enlaces a redes sociales-->
+            <a href="https://www.facebook.com/" target="_blank" class="footer__enlaces--redes"> <!--Facebook-->
+                <img src="../img/fbicon.webp" alt="Facebook" class="footer__enlaces--redes--imagenes">
+                <p>Cubosveloces</p>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__enlaces--redes"> <!--Instagram-->
+                <img src="../img/igicon.webp" alt="Instagram" class="footer__enlaces--redes--imagenes">
+                <p>Cubosveloces</p>
+            </a>
+        </div>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/js.js"></script>
+    <!--Javascript para la barra de navegación-->
+</body>
+
+</html>

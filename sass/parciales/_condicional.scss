@@ -1,0 +1,77 @@
+// Condicional que cambia de color el titulo
+.titulo {
+    @if ($colorPrincipal == $azul) {
+        color: #26f;
+    } @else if ($colorPrincipal == $naranja) {
+        color: #db5416;
+    } @else if ($colorPrincipal == $verde) {
+        color: #6cbb5d;
+    } @else if ($colorPrincipal == $rosa) {
+        color: #f878f8;
+    } @else if ($colorPrincipal == $gris) {
+        color: #555;
+    } @else {
+        color: $colorPrincipal - #222222;
+    }
+}
+
+//Condicional que cambia de color el NavBar
+.header {
+    &__nav {
+        .navBarActivo {
+            @if ($colorPrincipal == $azul) {
+                background-color: #89caff;
+            } @else if ($colorPrincipal == $naranja) {
+                background-color: #ee7137;
+            } @else if ($colorPrincipal == $verde) {
+                background-color: #81d171;
+            } @else if ($colorPrincipal == $rosa) {
+                background-color: #fd8ffd;
+            } @else if ($colorPrincipal == $gris) {
+                background-color: #747474;
+            } @else {
+                background-color: $colorPrincipal + #222222;
+            }
+        }
+    }
+}
+
+//Condicional que cambia el color del form
+form {
+    fieldset {
+        textarea, input {
+            @if ($colorPrincipal == $azul) {
+                border-bottom-color: #89caff;
+            } @else if ($colorPrincipal == $naranja) {
+                border-bottom-color: #ee7137;
+            } @else if ($colorPrincipal == $verde) {
+                border-bottom-color: #81d171;
+            } @else if ($colorPrincipal == $rosa) {
+                border-bottom-color: #fd8ffd;
+            } @else if ($colorPrincipal == $gris) {
+                border-bottom-color: #747474;
+            } @else {
+                border-bottom-color: $colorPrincipal + #222222;
+            }
+        }
+    }   
+}
+form {
+    fieldset {
+        textarea:focus, input:focus {
+            @if ($colorPrincipal == $azul) {
+                border-bottom-color: #abdeff;
+            } @else if ($colorPrincipal == $naranja) {
+                border-bottom-color: #fc9b6e;
+            } @else if ($colorPrincipal == $verde) {
+                border-bottom-color: #aaf19c;
+            } @else if ($colorPrincipal == $rosa) {
+                border-bottom-color: #ffbbff;
+            } @else if ($colorPrincipal == $gris) {
+                border-bottom-color: #a3a3a3;
+            } @else {
+                border-bottom-color: $colorPrincipal + #444444;
+            }
+        }
+    }   
+}

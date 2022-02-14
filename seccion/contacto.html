@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700;800&family=Raleway&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preload" href="../estilos/estilo-sass.css" as="style">
+    <link rel="stylesheet" href="../estilos/estilo-sass.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <!-- Barra de navegación -->
+            <a href="../index.html" class="header__nav--icon">
+                <!--Icono Navegacion-->
+                <img src="../img/rubikicon.webp" alt="Icono Cubo">
+            </a>
+            <img src="../img/rubik.webp" alt="NavBar" class="navBarIcono"> <!-- Icono barra desplegable -->
+            <ul class="listaNav ocultarNav">
+                <!-- Navegación principal -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cubos.html">Cubos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+            <ul class="listaNav navBar">
+                <!-- Navegación responsive -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cubos.html">Cubos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav> <!-- Fin barra de navegación -->
+    </header>
+    <main class="mainResponsive">
+        <form action="" method="get" enctype="text/plain"> <!--Inicio formulario-->
+            <fieldset>
+                <legend class="titulo legend">Contacto</legend> <!--Titulo form-->
+
+                <div class="formFlex"> <!--Ingresar nombre-->
+                    <label for="nombre">Escriba su nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+
+                <div class="formFlex"> <!--Ingresar email-->
+                    <label for="email">Escriba su email</label>
+                    <input type="email" name="mail" id="email">
+                </div>
+
+                <div class="formFlex"> <!--Ingresar mensaje-->
+                    <label for="mensaje">Escriba su mensaje</label>
+                    <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="marginForm">Provincia <!--Seleccionar localidad-->
+                    <label for="provincia"></label>
+                    <input type="radio" name="" id="provincia">
+                </div>
+                <div class="marginForm">Capital Federal <!--Seleccionar localidad-->
+                    <label for="capital"></label>
+                    <input type="radio" name="" id="capital">
+                </div>
+
+                <div class="marginForm"> <!--Seleccionar marca del cubo-->
+                    <label for="marca">De qué marca es tu cubo?</label>
+                    <select name="" id="marca" class="selectorMarcas">
+                        <option value="" selected hidden>Seleccioná marca</option>
+                        <option value="gan">Gan</option>
+                        <option value="moyu">Moyu</option>
+                        <option value="qiyi">Qiyi</option>
+                    </select>
+                </div>
+
+                <div class="marginForm"> <!--Recibir noticias y novedades-->
+                    <label for="check">Querés recibir noticias y novedades de cubos?</label>
+                    <input type="checkbox" name="" id="check">
+                </div>
+                <div> <!--Enviar mensaje-->
+                    <input type="submit" value="Enviar" class="boton botonFormulario">
+                </div>
+            </fieldset>
+        </form> <!--Fin del formulario-->
+    </main>
+
+    <footer class="footer">
+        <div class="footer__enlaces"> <!--Enlaces a redes sociales-->
+            <a href="https://www.facebook.com/" target="_blank" class="footer__enlaces--redes"> <!--Facebook-->
+                <img src="../img/fbicon.webp" alt="Facebook" class="footer__enlaces--redes--imagenes">
+                <p>Cubosveloces</p>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__enlaces--redes"> <!--Instagram-->
+                <img src="../img/igicon.webp" alt="Instagram" class="footer__enlaces--redes--imagenes">
+                <p>Cubosveloces</p>
+            </a>
+        </div>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="../js/js.js"></script> <!--Javascript para la barra de navegación-->
+</body>
+
+</html>

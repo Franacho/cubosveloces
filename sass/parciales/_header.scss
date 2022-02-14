@@ -1,0 +1,94 @@
+.header {
+    width: 100%;
+    background-image: url(../img/background.webp);
+    margin-bottom: 2rem;
+    border-bottom: solid .2rem #777;
+    z-index: 5;
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: 600;
+        flex-wrap: wrap;
+        font-family: 'Raleway', sans-serif;
+        background-color: #0008;
+        backdrop-filter: blur(5px);
+        &--icon {
+            width: 8rem;
+            margin: 1rem;
+        }
+        .navBarIcono {
+            display: none;
+            width: 3rem;
+            box-shadow: #000 0 0 10px;
+            border-radius: 50%;
+            transition: transform .5s;
+        }
+        .navBarIconoRotar {
+            transform: rotate(45deg);
+        }
+        .listaNav {
+            display: flex;
+            gap: 3rem;
+            list-style-type: none;
+            & li a {
+                text-decoration: none;
+                color: #fff;
+            }
+            & li a:hover {
+                border-bottom: $colorTerciario solid 2px;
+                border-radius: 15%;
+                color: $colorTerciario;
+                transition: .3s;
+            }
+        }
+        //NavBar Mobile
+        .navBar {
+            display: none;
+            animation-name: navBarAnimation;
+            animation-duration: .2s;
+        }
+        .navBarActivo {
+            display: flex;
+            position: absolute;
+            top: 10.2rem;
+            background-color: $colorTerciario;
+            width: 100%;
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+            border-bottom: solid .3rem $colorPrincipal;
+            & li a {
+                color: #000;
+                width: 100%;
+            }
+            & li {
+                padding: 1rem;
+            }
+        }
+        @media all and (max-width: 768px) {
+            .ocultarNav {
+                display: none;
+            }
+            .navBarIcono {
+                display: inline;
+            }
+        }
+    }
+}
+//Animacion NavBar
+@keyframes navBarAnimation {
+    0% {
+        height: 15%;
+        width: 5%;
+    }
+    50% {
+        height: 30%;
+    }
+    75% {
+        height: 50%;
+    }
+    100% {
+        height: 75%;
+    }
+}

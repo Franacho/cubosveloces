@@ -1,0 +1,14 @@
+.main__notFound {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &--imagen {
+        width: 20rem;
+    }
+    &--titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
