@@ -1,5 +1,5 @@
 {
-  "name": "CubosVeloces",
+  "name": "cubos-veloces",
   "version": "1.0.0",
   "description": "Página donde se muestran diferentes cubos para hacer speedcubing",
   "main": "index.js",
