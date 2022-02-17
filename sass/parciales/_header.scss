@@ -57,6 +57,7 @@
             flex-direction: column;
             gap: 0;
             align-items: center;
+            z-index: -1;
             border-bottom: solid .3rem $colorPrincipal;
             & li a {
                 color: #000;
@@ -79,16 +80,15 @@
 //Animacion NavBar
 @keyframes navBarAnimation {
     0% {
-        height: 15%;
-        width: 5%;
+        transform: translateX(13rem);
     }
     50% {
-        height: 30%;
+        transform: translateX(5rem);
     }
     75% {
-        height: 50%;
+        transform: translateX(2.5rem);
     }
     100% {
-        height: 75%;
+        transform: translateX(0);
     }
 }
